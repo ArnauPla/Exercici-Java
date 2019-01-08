@@ -1,0 +1,26 @@
+package project;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Country c1= new Country("Germany",3000,50,"EUR");
+		Country c2= new Country("Switzerland",300,30,"CHF");
+		
+		c2 = c1;
+		Country c3= new Country("Italy",300,30,"EUR");
+		
+		c3 = c1;
+		
+		c2.setName("UK");		
+		c1.setName("Spain");
+		
+		c3 = c2;
+		c1 = c3;
+		c2 = new Country("France", 300, 10, "EUR");
+		
+		System.out.println("País:" + c1.getName());
+		System.out.println("País:" + c2.getName());
+		System.out.println("País:" + c3.getName());
+	}
+
+}
