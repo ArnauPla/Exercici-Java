@@ -1,0 +1,23 @@
+package project;
+
+public class Country {
+	private double area;
+	private int numCitizens;
+	private String name;
+	private String currency;
+	
+	public Country(String name, double area, int numCitizens, String currency) {
+		this.area=area;
+		this.name=name;
+		this.numCitizens=numCitizens;
+		this.currency=currency;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name=name;
+	}
+}
